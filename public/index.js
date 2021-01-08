@@ -8,7 +8,7 @@ fetch("/api/transaction")
   .then(data => {
     // save db data on global variable
     transactions = data;
-
+    saveRecord("budget", "myStore", "get");
     populateTotal();
     populateTable();
     populateChart();
@@ -136,7 +136,7 @@ function sendTransaction(isAdding) {
   })
   .catch(err => {
     // fetch failed, so save in indexed db
-    saveRecord(transaction);
+    saveRecord("budget", "myStore", "put", transaction);
 
     // clear form
     nameEl.value = "";
