@@ -8,4 +8,6 @@ This assignment allows the user to track their monthly budget by adding and subt
 
 To use, clone the Github repository and install the proper node modules. Also ensure that MongoDB Compass is installed on your computer to create the connection.
 
-[!deployed app](app.png)
+![deployed app](app.png)
+
+Link to deployed application: https://stormy-ocean-33321.herokuapp.com/
